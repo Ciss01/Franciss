@@ -9,6 +9,57 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <style>
+    .learn-more-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .learn-more-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    color: #fff;
+  }
+
+  .image-container {
+  position: relative;
+  width: 200px; /* Adjust as needed */
+  overflow: hidden;
+  border-radius: 10px; /* Optional rounded corners */
+}
+
+.image-container img {
+  width: 100%;
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth image effect */
+}
+
+.image-container .caption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.5s ease; /* Smooth fade-in effect */
+}
+
+.image-container:hover img {
+  transform: scale(1.1); /* Zoom effect */
+  opacity: 0.8; /* Slight fade effect */
+}
+
+.image-container:hover .caption {
+  opacity: 1; /* Show caption on hover */
+}
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       margin: 0;
@@ -200,7 +251,7 @@
           </h1>
           
       <ul class="nav-items">
-        <li><a href="../Main/index.html">Home</a></li>
+        <li><a href="../Main/main.html">Home</a></li>
         <li><a href="../Content/AboutUs.html">About</a></li>
         <li><a href="../Content/ContactUs.html">Contact</a></li>
       </ul>
@@ -212,43 +263,39 @@
     <div class="hero-section">
       <h2><span class="highlight">COURSES</span></h2>
     </div>
+    <br><br><br><br><br>
 
     <section class="info-cards">
-      <div class="card">
-          <img src="B.E.webp" alt="Courses Image" class="card-image">
-          <h3>Elementary Education</h3>
-          <a href="#" class="card-button">Learn More</a>
+      <div class="image-container">
+        <img src="B.E.webp" alt="Sample Image">
+        <div class="learn-more-btn">Learn More</div>
       </div>
   
-      <div class="card">
-          <img src="BCRIM.webp" alt="About Us Image" class="card-image">
-          <h3>College of Criminology</h3>
-          <a href="#" class="card-button">Learn More</a>
-      </div>
-  
-      <div class="card">
-          <img src="I.T.webp" alt="Contact Us Image" class="card-image">
-          <h3>Information Technology</h3>
-          <a href="#" class="card-button">Get in Touch</a>
-      </div>
-  
-      <div class="card">
-          <img src="H.M.webp" alt="Extra Image 1" class="card-image">
-          <h3>Hospitality Management</h3>
-          <a href="#" class="card-button">Learn More</a>
-      </div>
-  
-      <div class="card">
-          <img src="B.A.webp" alt="Extra Image 2" class="card-image">
-          <h3>Business Administration</h3>
-          <a href="#" class="card-button">Learn More</a>
+      <div class="image-container">
+        <img src="BCRIM.webp" alt="Sample Image">
+        <div class="learn-more-btn">Learn More</div>
       </div>
 
-      <div class="card">
-        <img src="B.E2.webp" alt="Extra Image 2" class="card-image">
-        <h3>Secondary Education</h3>
-        <a href="#" class="card-button">Learn More</a>
-    </div>
+      <div class="image-container">
+        <img src="I.T.webp" alt="Sample Image">
+        <div class="learn-more-btn">Learn More</div>
+      </div>
+  
+      <div class="image-container">
+        <img src="H.M.webp" alt="Sample Image">
+        <div class="learn-more-btn">Learn More</div>
+      </div>
+  
+      <div class="image-container">
+        <img src="B.A.webp" alt="Sample Image">
+        <div class="learn-more-btn">Learn More</div>
+      </div>
+
+      <div class="image-container">
+        <img src="B.E2.webp" alt="Sample Image">
+        <div class="learn-more-btn">Learn More</div>
+      </div>
+
    
   </section>
   
